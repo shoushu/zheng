@@ -19,13 +19,41 @@ import static com.zheng.common.util.StringUtil.lineToHump;
  */
 public class MybatisGeneratorUtil {
 
-	// generatorConfig模板路径
+	/***********************************************************
+	 * @description: generatorConfig模板路径
+	 * @className: MybatisGeneratorUtil
+	 * @author :
+	 * @see :
+	 * @since :
+	 * @Date: 2018/2/10
+	**********************************************************/
 	private static String generatorConfig_vm = "/template/generatorConfig.vm";
-	// Service模板路径
+	/***********************************************************
+	 * @description:  Service模板路径
+	 * @className: MybatisGeneratorUtil
+	 * @author :
+	 * @see :
+	 * @since :
+	 * @Date: 2018/2/10
+	**********************************************************/
 	private static String service_vm = "/template/Service.vm";
-	// ServiceMock模板路径
+	/***********************************************************
+	 * @description: ServiceMock模板路径
+	 * @className: MybatisGeneratorUtil
+	 * @author :
+	 * @see :
+	 * @since :
+	 * @Date: 2018/2/10
+	**********************************************************/
 	private static String serviceMock_vm = "/template/ServiceMock.vm";
-	// ServiceImpl模板路径
+	/***********************************************************
+	 * @description: ServiceImpl模板路径
+	 * @className: MybatisGeneratorUtil
+	 * @author :
+	 * @see :
+	 * @since :
+	 * @Date: 2018/2/10
+	**********************************************************/
 	private static String serviceImpl_vm = "/template/ServiceImpl.vm";
 
 	/**

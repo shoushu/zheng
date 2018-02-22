@@ -18,6 +18,7 @@ public class JmsUtil {
      * @param destination
      * @param textMessage
      */
+
     public static void sendMessage(JmsTemplate jmsTemplate, Destination destination, final String textMessage) {
         jmsTemplate.send(destination, new MessageCreator() {
             @Override

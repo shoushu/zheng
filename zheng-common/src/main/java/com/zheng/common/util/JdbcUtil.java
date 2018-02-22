@@ -11,15 +11,22 @@ import java.util.Map;
  * Created by ZhangShuzheng on 2017/1/10.
  */
 public class JdbcUtil {
-
-	// 定义数据库的链接
+	/********************
+	/*定义数据库的链接
+	*******************/
 	private Connection conn;
-	// 定义sql语句的执行对象
+	/*************************
+	 * 定义sql语句的执行对象
+	 *************************/
 	private PreparedStatement pstmt;
-	// 定义查询返回的结果集合
+	/***************
+	 * 定义查询返回的结果集合
+	 ********************/
 	private ResultSet rs;
 
-	// 初始化
+	/***************
+	 * 初始化
+	 ********************/
 	public JdbcUtil(String driver, String url, String username, String password) {
 		try {
 			Class.forName(driver);
@@ -30,7 +37,9 @@ public class JdbcUtil {
 		}
 	}
 
-	// 更新数据
+	/***************
+	 * 更新数据
+	 ********************/
 	public boolean updateByParams(String sql, List params) throws SQLException {
 		// 影响行数
 		int result = -1;
@@ -46,7 +55,9 @@ public class JdbcUtil {
 		return result > 0 ? true : false;
 	}
 
-	// 查询多条记录
+	/***************
+	 *查询多条记录
+	 ********************/
 	public List<Map> selectByParams(String sql, List params) throws SQLException {
 		List<Map> list = new ArrayList<> ();
 		int index = 1;
@@ -74,7 +85,9 @@ public class JdbcUtil {
 		return list;
 	}
 
-	// 释放连接
+	/***************
+	 *释放连接
+	 ********************/
 	public void release() {
 		try {
 			if (null != rs) {
